@@ -1,4 +1,4 @@
-/*
+﻿/*
     Theme Name: İdari Birimler V2
     Theme URI: https://samsun.edu.tr
     Author: Onur Asılsoy
@@ -7777,7 +7777,7 @@ body.login #login {
 }
 
 body.login #login h1 a {
-    background-image: url(assets/img/mavi-logo.png);
+    background-image: url(https://samsun.edu.tr/wp-content/themes/idari-v2/assets/img/mavi-logo.png);
     width: 100%;
     height: 61px;
     background-size: 210px 61px;
