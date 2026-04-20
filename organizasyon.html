@@ -1,775 +1,126 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-
-<title>Organizasyon - Yazılım Mühendisliği Bölümü</title>
-<meta name="description" content="Bölüm Başkanlığı Doç. Dr. Muammer TÜRKOĞLU (Bölüm Başkanı) Dr. Öğr. Üyesi Emel SOYLU (Bölüm Başkan Yardımcısı) Dr. Öğr. Üyesi Özgür" />
-<link rel="canonical" href="./organizasyon.html" />
-<link rel="dns-prefetch" href="//samsun.edu.tr">
-<link rel="dns-prefetch" href="//cdn.samsun.edu.tr">
-<meta name="publisher" content="Samsun Üniversitesi">
-
-<link rel="stylesheet" type="text/css" href="https://samsun.edu.tr/wp-content/themes/idari-v2/style.css?t=190426_1.11" />
-<link rel="stylesheet" type="text/css" href="https://cdn.samsun.edu.tr/assets/icons-free/css/all.min.css" />
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap">
-<link rel="shortcut icon" type="image/x-icon" href="https://yazilimmuhendisligi.samsun.edu.tr/wp-content/themes/idari-v2/assets/img/favicon-turkuaz.ico">
-<style>:root { --color-theme: #006a6a; --color-theme-dark: #004f4f; }</style>
-<style>
-*, *::before, *::after {
-transition: none !important;
-animation: none !important;
--webkit-transition: none !important;
--webkit-animation: none !important;
-scroll-behavior: auto !important;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organizasyon - Yazılım Mühendisliği Bölümü</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Spectral:wght@600;700&display=swap');
+:root {
+  --bg: #f5f7fb;
+  --paper: #ffffff;
+  --ink: #172033;
+  --muted: #5b6475;
+  --line: #dbe1ec;
+  --brand: #0b7a75;
+  --brand-dark: #074c4b;
+  --accent: #f59f00;
+  --shadow: 0 16px 40px rgba(20, 32, 51, 0.12);
 }
-html {
-scroll-behavior: auto !important;
-}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Manrope', 'Segoe UI', sans-serif; color: var(--ink); background: radial-gradient(circle at 10% -10%, #d8f3ef 0%, transparent 45%), radial-gradient(circle at 90% -15%, #ffe8bd 0%, transparent 38%), var(--bg); }
+a { color: inherit; }
+header.site-head { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(8px); background: rgba(245, 247, 251, 0.9); border-bottom: 1px solid var(--line); }
+.wrap { width: min(1120px, 92%); margin: 0 auto; }
+.brand-row { padding: 18px 0 8px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.brand { font-family: 'Spectral', serif; font-weight: 700; font-size: clamp(1.25rem, 2vw, 1.8rem); }
+.brand small { display: block; font-family: 'Manrope', sans-serif; font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+.quick-home { text-decoration: none; color: var(--brand-dark); font-weight: 700; font-size: 0.9rem; }
+nav.main-nav { padding-bottom: 14px; }
+.nav-list { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+.nav-list > li { position: relative; }
+.nav-link, .nav-label { display: inline-block; padding: 10px 13px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 0.88rem; color: var(--brand-dark); background: #e8f4f3; border: 1px solid #cae5e3; }
+.nav-link.active { color: #fff; background: linear-gradient(120deg, var(--brand), #13948e); border-color: transparent; }
+.nav-group:hover .submenu, .nav-group:focus-within .submenu { opacity: 1; visibility: visible; transform: translateY(0); }
+.submenu { position: absolute; left: 0; top: calc(100% + 8px); min-width: 280px; padding: 10px; margin: 0; list-style: none; border-radius: 14px; background: #ffffff; border: 1px solid var(--line); box-shadow: var(--shadow); opacity: 0; visibility: hidden; transform: translateY(8px); transition: all .2s ease; }
+.submenu a { display: block; text-decoration: none; color: var(--ink); padding: 8px 10px; border-radius: 10px; font-size: 0.88rem; }
+.submenu a:hover, .submenu a.active { background: #edf3ff; color: #1f3b8a; }
+main { padding: 42px 0 56px; }
+.hero { background: linear-gradient(120deg, var(--brand-dark), var(--brand)); color: #fff; border-radius: 24px; padding: clamp(24px, 5vw, 44px); box-shadow: var(--shadow); }
+.hero h1 { margin: 0 0 10px; font-size: clamp(1.4rem, 3vw, 2.5rem); font-family: 'Spectral', serif; }
+.hero p { margin: 0; max-width: 72ch; line-height: 1.6; }
+.content-card { margin-top: 24px; background: var(--paper); border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 10px 30px rgba(20, 32, 51, 0.08); padding: clamp(18px, 3.5vw, 30px); }
+.content-card h2, .content-card h3 { margin-top: 0; font-family: 'Spectral', serif; }
+.content-card p, .content-card li { color: #2b3448; line-height: 1.72; }
+.content-card ul { padding-left: 20px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+th, td { border: 1px solid var(--line); padding: 10px; text-align: left; vertical-align: top; }
+th { background: #eef4ff; }
+.footer-nav { margin-top: 26px; padding-top: 16px; border-top: 1px dashed var(--line); display: flex; flex-wrap: wrap; gap: 8px; }
+.footer-nav a { text-decoration: none; font-size: 0.84rem; background: #f3f5f8; color: #334; border: 1px solid var(--line); border-radius: 999px; padding: 6px 10px; }
+footer.site-foot { padding: 22px 0 40px; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 900px) { .submenu { position: static; opacity: 1; visibility: visible; transform: none; min-width: auto; margin-top: 8px; } .nav-group { width: 100%; } }
 </style>
-<meta name="theme-color" content="#006a6a">
-<meta name="msapplication-navbutton-color" content="#006a6a">
-<meta name="mobile-web-app-capable" content="yes">
-
-<link rel="stylesheet" href="https://cdn.samsun.edu.tr/assets/css/fancybox-gallery.min.css" />
 </head>
-<body class="">
-<div class="site-menu" id="siteMenu" aria-hidden="true">
-	<div class="menu-body">
-        <div class="menu-logo">
-            <span class="logo">
-                <a href="index.html">
-                    <img src="https://yazilimmuhendisligi.samsun.edu.tr/wp-content/themes/idari-v2/assets/img/logo-transparent-uzun.png" alt="Samsun Üniversitesi" width="354" height="103">
-                </a>
-            </span>
-            <span class="menu-off" 
-                role="button" 
-                tabindex="0" 
-                aria-label="Menüyü Kapat" 
-                aria-expanded="true"
-                aria-controls="siteMenu">
-                    <i class="fa-solid fa-xmark"></i>
-            </span>
-        </div>
-        <div class="menu-group" role="navigation" aria-label="Mobil Menü">
-                            <div class="menu-ana-menu-container"><ul id="menu-ana-menu-mobil" class="menu"><li id="menu-item-1433" class="bina menu-item menu-item-type-post_type menu-item-object-post current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1433"><a href="tanitim.html">Bölüm Hakkında</a>
-<ul class="sub-menu">
-	<li id="menu-item-17" class="monitor menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="tanitim.html">Tanıtım</a></li>
-	<li id="menu-item-40" class="gazete menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="#">Tanıtım Sunumu</a></li>
-	<li id="menu-item-51" class="ok menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="amaclar-ve-hedefler.html">Amaçlar ve Hedefler</a></li>
-	<li id="menu-item-39" class="sayfa menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a href="vizyon-misyon.html">Vizyon, Misyon</a></li>
-	<li id="menu-item-33" class="referans menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="yonetim.html">Yönetim</a></li>
-	<li id="menu-item-1432" class="mercek menu-item menu-item-type-post_type menu-item-object-post menu-item-1432"><a href="anabilim-dallari.html">Anabilim Dalları</a></li>
-	<li id="menu-item-1434" class="kurumsal menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-1434"><a href="organizasyon.html" aria-current="page">Kurul ve Komisyonları</a></li>
-	<li id="menu-item-16" class="dunya menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="#">YÖK Atlas</a></li>
-</ul>
-</li>
-<li id="menu-item-1473" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1473"><a href="#">Personel</a>
-<ul class="sub-menu">
-	<li id="menu-item-32" class="kurumsal menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a target="_blank" href="#">Akademik Personel</a></li>
-	<li id="menu-item-1474" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1474"><a href="#">İdari Personel</a></li>
-</ul>
-</li>
-<li id="menu-item-19" class="kalem menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19"><a href="#">Eğitim</a>
-<ul class="sub-menu">
-	<li id="menu-item-20" class="sayfa menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20"><a href="#">Lisans</a>
-	<ul class="sub-menu">
-		<li id="menu-item-14" class="pdf menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14"><a>Müfredat</a>
-		<ul class="sub-menu">
-			<li id="menu-item-34" class="pdf menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="#">Müfredat 2023</a></li>
-			<li id="menu-item-38" class="pdf menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="#">Müfredat 2021</a></li>
-		</ul>
-</li>
-		<li id="menu-item-22" class="urun menu-item menu-item-type-custom menu-item-object-custom menu-item-22"><a href="#">Ders Bilgi Paketi</a></li>
-		<li id="menu-item-41" class="arti menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a href="#">Program Çıktıları</a></li>
-		<li id="menu-item-23" class="gazete menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a href="#">Akademik Takvim</a></li>
-		<li id="menu-item-18" class="saat menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a href="#">Ders Programı</a></li>
-		<li id="menu-item-28" class="soru iareti menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a href="2025-2026-egitim-ogretim-yili-guz-donemi-ara-sinav-takvimi.html">Sınav Programı</a></li>
-		<li id="menu-item-29" class="gazete menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29"><a href="#">Staj</a>
-		<ul class="sub-menu">
-			<li id="menu-item-31" class="ok menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a href="staj-uygulamasinda-sikca-sorulan-sorular-ve-cevaplari.html">Staj için SSS</a></li>
-		</ul>
-</li>
-		<li id="menu-item-1435" class="harita menu-item menu-item-type-post_type menu-item-object-page menu-item-1435"><a href="#">İşletmede Mesleki Eğitim</a></li>
-		<li id="menu-item-30" class="ok menu-item menu-item-type-custom menu-item-object-custom menu-item-30"><a href="#">Bitirme Projesi</a></li>
-	</ul>
-</li>
-	<li id="menu-item-21" class="klasor menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-21"><a href="#">Lisansüstü</a>
-	<ul class="sub-menu">
-		<li id="menu-item-1665" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1665"><a href="#">Müfredat</a>
-		<ul class="sub-menu">
-			<li id="menu-item-1666" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1666"><a href="#">Müfredat 2025</a></li>
-			<li id="menu-item-27" class="pdf menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="#">Müfredat 2021</a></li>
-		</ul>
-</li>
-		<li id="menu-item-25" class="urun menu-item menu-item-type-custom menu-item-object-custom menu-item-25"><a href="#">Ders Bilgi Paketi</a></li>
-		<li id="menu-item-42" class="arti menu-item menu-item-type-custom menu-item-object-custom menu-item-42"><a href="#">Program Çıktıları</a></li>
-		<li id="menu-item-26" class="gazete menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a href="#">Akademik Takvim</a></li>
-		<li id="menu-item-24" class="saat menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="2025-2026-egitim-ogretim-yili-guz-donemi-yuksek-lisans-ders-programi.html">Ders Programı</a></li>
-		<li id="menu-item-37" class="soru iareti menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="2025-2026-egitim-ogretim-yili-guz-donemi-ara-sinav-takvimi.html">Sınav Programı</a></li>
-	</ul>
-</li>
-	<li id="menu-item-49" class="odul menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49"><a href="#">MÜDEK</a>
-	<ul class="sub-menu">
-		<li id="menu-item-50" class="kurumsal menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-50"><a href="#">Paydaşlar</a>
-		<ul class="sub-menu">
-			<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="#">İç Paydaşlar</a></li>
-			<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53"><a href="#">Dış Paydaşlar</a></li>
-		</ul>
-</li>
-		<li id="menu-item-1223" class="sayfa menu-item menu-item-type-custom menu-item-object-custom menu-item-1223"><a href="#">Anketler</a></li>
-		<li id="menu-item-1707" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1707"><a href="#">Program Eğitim Çıktıları</a></li>
-	</ul>
-</li>
-	<li id="menu-item-1436" class="dunya menu-item menu-item-type-post_type menu-item-object-page menu-item-1436"><a href="#">Erasmus Programı</a></li>
-	<li id="menu-item-46" class="odul menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="#">Çift Anadal Programı &#8211; ÇAP</a></li>
-	<li id="menu-item-43" class="ok menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43"><a href="#">Araştırma</a>
-	<ul class="sub-menu">
-		<li id="menu-item-45" class="sayfa menu-item menu-item-type-custom menu-item-object-custom menu-item-45"><a href="#">Tezler</a></li>
-		<li id="menu-item-44" class="klasor menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44"><a>Projeler</a>
-		<ul class="sub-menu">
-			<li id="menu-item-48" class="kurumsal menu-item menu-item-type-custom menu-item-object-custom menu-item-48"><a href="#">Akademik Projeler</a></li>
-			<li id="menu-item-1222" class="referans menu-item menu-item-type-custom menu-item-object-custom menu-item-1222"><a href="#">Öğrenci Projeleri</a></li>
-			<li id="menu-item-1499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1499"><a href="#">Öğrenci Projeleri 2024/1</a></li>
-		</ul>
-</li>
-	</ul>
-</li>
-	<li id="menu-item-47" class="mercek menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="#">Formlar</a></li>
-</ul>
-</li>
-<li id="menu-item-36" class="iletisim menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="/iletisim/">İletişim</a></li>
-</ul></div>                    </div>
-	</div>
-    <div class="menu-bg"></div>
-</div>
-
-<header role="banner" class="header-tasarim-2">
-    <div class="sub-nav">
-    <div class="container">
-        <div class="sub-menu">
-                        <ul>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-house"></i>Samsun Üniversitesi                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <i class="fa-solid fa-user-tie"></i>EBYS                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <i class="fa-solid fa-file-pen"></i>VPYS                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-globe"></i>UZEM                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <i class="fa-solid fa-envelope"></i>E-Posta                    </a>
-                </li>
-            </ul>
-                    </div>
-
-        <div class="search">
-            <form method="get" action="#">
-                <input aria-label="Site içinde ara" type="text" name="s" class="search-input" value="" placeholder="Ara" />
-                <button type="submit" aria-label="Ara"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-        </div>
-
-        <ul class="social">
-            <li class="next">
-                <a rel="nofollow" href="https://sosyal.teknofest.app/@samsun_univ" target="_blank" title="Next Sosyal">
-                    <img src="https://samsun.edu.tr/wp-content/uploads/2025/08/next-sosyal.png" alt="Next Sosyal">
-                </a>
-            </li>
-            <li class="facebook">
-                <a rel="nofollow" href="https://www.facebook.com/samsun.univ" target="_blank" title="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-            </li>
-            <li class="twitter">
-                <a rel="nofollow" href="https://x.com/samsun_univ" target="_blank" title="Twitter">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-            </li>
-            <li class="linkedin">
-                <a rel="nofollow" href="https://www.linkedin.com/school/samsununiversitesi/" target="_blank" title="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </li>
-            <li class="instagram">
-                <a rel="nofollow" href="https://www.instagram.com/samsun.univ/" target="_blank" title="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </li>
-            <li class="youtube">
-                <a rel="nofollow" href="https://www.youtube.com/c/SamsunÜniversitesii" target="_blank" title="YouTube">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-            </li>
-        </ul>
-
-        <div class="translate">
-                            <div id="google_translate_element"></div>
-                    </div>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <div class="brand-row">
+      <div class="brand">Yazılım Mühendisliği Bölümü<small>Samsun Üniversitesi Bilgi Portalı</small></div>
+      <a class="quick-home" href="index.html">Anasayfa</a>
     </div>
+    <nav class="main-nav" aria-label="Site Navigasyonu">
+      <ul class="nav-list">
+        <li><a class="nav-link " href="index.html">Anasayfa</a></li>
+        <li class="nav-group">
+          <span class="nav-label">Bölüm Hakkında</span>
+          <ul class="submenu">
+            <li><a class="" href="tanitim.html">Tanıtım</a></li>
+            <li><a class="" href="amaclar-ve-hedefler.html">Amaçlar ve Hedefler</a></li>
+            <li><a class="" href="vizyon-misyon.html">Vizyon ve Misyon</a></li>
+            <li><a class="" href="yonetim.html">Yönetim</a></li>
+            <li><a class="" href="anabilim-dallari.html">Anabilim Dalları</a></li>
+            <li><a class="active" href="organizasyon.html">Kurul ve Komisyonlar</a></li>
+          </ul>
+        </li>
+        <li class="nav-group">
+          <span class="nav-label">Eğitim</span>
+          <ul class="submenu">
+            <li><a class="" href="ders-programi.html">Ders Programı</a></li>
+            <li><a class="" href="sinav-takvimi.html">Sınav Takvimi</a></li>
+            <li><a class="" href="Staj-sikca-sorulan-sorular.html">Staj SSS</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Kurul ve Komisyonlar</h1>
+      <p>Bölümün akademik ve idari süreçleri; kurul ve komisyonlar üzerinden şeffaf, planlı ve sürdürülebilir şekilde yönetilir.</p>
+    </section>
+    <article class="content-card">
+      <h2>Organizasyon Yapısı</h2>
+<ul>
+  <li>Bölüm Başkanlığı</li>
+  <li>Bölüm Kurulu</li>
+  <li>Bölüm Akademik Kurulu</li>
+  <li>Kalite Komisyonu</li>
+  <li>ÇAP Koordinatörlüğü</li>
+  <li>Staj Komisyonu</li>
+  <li>Müfredat ve Ölçme-Değerlendirme Komisyonları</li>
+</ul>
+<p>Bu yapı, eğitim kalitesinin korunması, öğrenci geri bildirimlerinin değerlendirilmesi ve sürekli iyileştirme çalışmalarının kurumsal düzeyde yürütülmesini sağlar.</p>
+      <div class="footer-nav">
+  <a href="index.html">Anasayfa</a>
+  <a href="tanitim.html">Tanıtım</a>
+  <a href="amaclar-ve-hedefler.html">Amaçlar ve Hedefler</a>
+  <a href="vizyon-misyon.html">Vizyon-Misyon</a>
+  <a href="yonetim.html">Yönetim</a>
+  <a href="anabilim-dallari.html">Anabilim Dalları</a>
+  <a href="organizasyon.html">Organizasyon</a>
+  <a href="ders-programi.html">Ders Programı</a>
+  <a href="sinav-takvimi.html">Sınav Takvimi</a>
+  <a href="Staj-sikca-sorulan-sorular.html">Staj SSS</a>
 </div>
-
-<div class="site-header">
-    <div class="container">
-        <div class="menu-btn" 
-            role="button" 
-            tabindex="0" 
-            aria-label="Menüyü Aç" 
-            aria-expanded="false"
-            aria-controls="siteMenu">
-                <span class="icon"><i class="fa-solid fa-bars"></i></span>
-        </div>
-        <div class="header-logo">
-            <a href="index.html">
-                <div class="figure">
-                    <span>
-                        <img src="https://yazilimmuhendisligi.samsun.edu.tr/wp-content/themes/idari-v2/assets/img/logo-transparent-oval.png" alt="Organizasyon - Yazılım Mühendisliği Bölümü" width="354" height="103">
-                    </span>
-                </div>
-                <div class="title">
-                    <span>Yazılım Mühendisliği</span>
-                    <span>Bölümü</span>
-                </div>
-            </a>
-        </div>
-        <div class="search-mobil-btn"
-            role="button"
-            tabindex="0"
-            aria-label="Aramayı Aç"
-            aria-expanded="false"
-            aria-controls="mobil-arama">
-            <span class="icon" aria-hidden="true">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-        </div>
-        <nav aria-label="Ana Menü" class="header-menu">
-                            <div class="menu-ana-menu-container"><ul id="menu-ana-menu-desktop" class="menu"><li class="bina menu-item menu-item-type-post_type menu-item-object-post current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1433"><a href="tanitim.html">Bölüm Hakkında</a>
-<ul class="sub-menu">
-	<li class="monitor menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="tanitim.html">Tanıtım</a></li>
-	<li class="gazete menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="#">Tanıtım Sunumu</a></li>
-	<li class="ok menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="amaclar-ve-hedefler.html">Amaçlar ve Hedefler</a></li>
-	<li class="sayfa menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a href="vizyon-misyon.html">Vizyon, Misyon</a></li>
-	<li class="referans menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="yonetim.html">Yönetim</a></li>
-	<li class="mercek menu-item menu-item-type-post_type menu-item-object-post menu-item-1432"><a href="anabilim-dallari.html">Anabilim Dalları</a></li>
-	<li class="kurumsal menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-1434"><a href="organizasyon.html" aria-current="page">Kurul ve Komisyonları</a></li>
-	<li class="dunya menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="#">YÖK Atlas</a></li>
-</ul>
-</li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1473"><a href="#">Personel</a>
-<ul class="sub-menu">
-	<li class="kurumsal menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a target="_blank" href="#">Akademik Personel</a></li>
-	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1474"><a href="#">İdari Personel</a></li>
-</ul>
-</li>
-<li class="kalem menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19"><a href="#">Eğitim</a>
-<ul class="sub-menu">
-	<li class="sayfa menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20"><a href="#">Lisans</a>
-	<ul class="sub-menu">
-		<li class="pdf menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14"><a>Müfredat</a>
-		<ul class="sub-menu">
-			<li class="pdf menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="#">Müfredat 2023</a></li>
-			<li class="pdf menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="#">Müfredat 2021</a></li>
-		</ul>
-</li>
-		<li class="urun menu-item menu-item-type-custom menu-item-object-custom menu-item-22"><a href="#">Ders Bilgi Paketi</a></li>
-		<li class="arti menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a href="#">Program Çıktıları</a></li>
-		<li class="gazete menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a href="#">Akademik Takvim</a></li>
-		<li class="saat menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a href="#">Ders Programı</a></li>
-		<li class="soru iareti menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a href="2025-2026-egitim-ogretim-yili-guz-donemi-ara-sinav-takvimi.html">Sınav Programı</a></li>
-		<li class="gazete menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29"><a href="#">Staj</a>
-		<ul class="sub-menu">
-			<li class="ok menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a href="staj-uygulamasinda-sikca-sorulan-sorular-ve-cevaplari.html">Staj için SSS</a></li>
-		</ul>
-</li>
-		<li class="harita menu-item menu-item-type-post_type menu-item-object-page menu-item-1435"><a href="#">İşletmede Mesleki Eğitim</a></li>
-		<li class="ok menu-item menu-item-type-custom menu-item-object-custom menu-item-30"><a href="#">Bitirme Projesi</a></li>
-	</ul>
-</li>
-	<li class="klasor menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-21"><a href="#">Lisansüstü</a>
-	<ul class="sub-menu">
-		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1665"><a href="#">Müfredat</a>
-		<ul class="sub-menu">
-			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1666"><a href="#">Müfredat 2025</a></li>
-			<li class="pdf menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="#">Müfredat 2021</a></li>
-		</ul>
-</li>
-		<li class="urun menu-item menu-item-type-custom menu-item-object-custom menu-item-25"><a href="#">Ders Bilgi Paketi</a></li>
-		<li class="arti menu-item menu-item-type-custom menu-item-object-custom menu-item-42"><a href="#">Program Çıktıları</a></li>
-		<li class="gazete menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a href="#">Akademik Takvim</a></li>
-		<li class="saat menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="2025-2026-egitim-ogretim-yili-guz-donemi-yuksek-lisans-ders-programi.html">Ders Programı</a></li>
-		<li class="soru iareti menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="2025-2026-egitim-ogretim-yili-guz-donemi-ara-sinav-takvimi.html">Sınav Programı</a></li>
-	</ul>
-</li>
-	<li class="odul menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49"><a href="#">MÜDEK</a>
-	<ul class="sub-menu">
-		<li class="kurumsal menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-50"><a href="#">Paydaşlar</a>
-		<ul class="sub-menu">
-			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="#">İç Paydaşlar</a></li>
-			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53"><a href="#">Dış Paydaşlar</a></li>
-		</ul>
-</li>
-		<li class="sayfa menu-item menu-item-type-custom menu-item-object-custom menu-item-1223"><a href="#">Anketler</a></li>
-		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1707"><a href="#">Program Eğitim Çıktıları</a></li>
-	</ul>
-</li>
-	<li class="dunya menu-item menu-item-type-post_type menu-item-object-page menu-item-1436"><a href="#">Erasmus Programı</a></li>
-	<li class="odul menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="#">Çift Anadal Programı &#8211; ÇAP</a></li>
-	<li class="ok menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43"><a href="#">Araştırma</a>
-	<ul class="sub-menu">
-		<li class="sayfa menu-item menu-item-type-custom menu-item-object-custom menu-item-45"><a href="#">Tezler</a></li>
-		<li class="klasor menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44"><a>Projeler</a>
-		<ul class="sub-menu">
-			<li class="kurumsal menu-item menu-item-type-custom menu-item-object-custom menu-item-48"><a href="#">Akademik Projeler</a></li>
-			<li class="referans menu-item menu-item-type-custom menu-item-object-custom menu-item-1222"><a href="#">Öğrenci Projeleri</a></li>
-			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1499"><a href="#">Öğrenci Projeleri 2024/1</a></li>
-		</ul>
-</li>
-	</ul>
-</li>
-	<li class="mercek menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="#">Formlar</a></li>
-</ul>
-</li>
-<li class="iletisim menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="/iletisim/">İletişim</a></li>
-</ul></div>                    </nav>
-    </div>
-    <div class="search-mobil" aria-hidden="true">
-        <form method="get" action="#">
-            <input aria-label="Site içinde ara" type="text" name="s" class="search-input" value="" placeholder="Ara" />
-            <button type="submit" aria-label="Ara"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>		
-    </div>
-</div></header>
-<main id="icerik"><div class="container">
-	<article class="single ">
-		<div class="binary">
-			<div class="post">
-				<div class="breadcrumb">
-					<ol>
-						<li><a href="#">Anasayfa</a></li><li><a href="#" rel="category tag">Genel</a></li><li class="active"><span>Organizasyon</span></li>					</ol>
-				</div>
-				<div class="news-title">
-					<h1>Organizasyon</h1>
-				</div>
-								
-				
-				<div class="detail">
-					<div class="left">
-						<span class="cat">
-							<a href="#">Genel</a>
-						</span>
-						<span class="time">
-							<i>-</i> 
-							12 Şubat 2020 Çar						</span>
-					</div>
-					<ul class="social">
-						<li class="facebook">
-							<a href="https://www.facebook.com/sharer/sharer.php?u=https://yazilimmuhendisligi.samsun.edu.tr/organizasyon/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-						</li>
-						<li class="xTwitter">
-							<a href="https://twitter.com/intent/tweet?text=Organizasyon&url=https://yazilimmuhendisligi.samsun.edu.tr/organizasyon/" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-						</li>
-						<li class="linkedin">
-							<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://yazilimmuhendisligi.samsun.edu.tr/organizasyon/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-						</li>
-						<li class="whatsapp">
-							<a href="https://api.whatsapp.com/send?text=Organizasyon https://yazilimmuhendisligi.samsun.edu.tr/organizasyon/" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-						</li>
-					</ul>
-				</div>
-
-				<section class="section">
-					<p><strong>Bölüm Başkanlığı</strong></p>
-<ul>
-<li><span>Doç. Dr. Muammer TÜRKOĞLU (Bölüm Başkanı)</span></li>
-<li><span>Dr. Öğr. Üyesi Emel SOYLU (Bölüm Başkan Yardımcısı)</span></li>
-<li><span>Dr. Öğr. Üyesi Özgür TONKAL (Bölüm Başkan Yardımcısı)</span></li>
-</ul>
-<p>&nbsp;</p>
-<p><strong>ÇAP Koordinatörlüğü</strong></p>
-<ul>
-<li><span>Dr. Öğr. Üyesi Emel SOYLU (Koordinatör)</span></li>
-<li><span>Doç. Dr. Selçuk ÇAKMAK</span></li>
-<li><span>Dr. Öğr. Üyesi Nurettin ŞENYER</span></li>
-</ul>
-<p>&nbsp;</p>
-<p><strong>Akademik Teşvik Komisyonu</strong></p>
-<ul>
-<li><span>Doç. Dr. Selçuk ÇAKMAK (Komisyon Başkanı)</span></li>
-<li><span>Doç. Dr. Zafer CÖMERT</span></li>
-<li><span>Doç. Dr. Abdulkadir KARACI</span></li>
-</ul>
-<p>&nbsp;</p>
-<p><strong>Staj Komisyonu</strong></p>
-<ul>
-<li><span>Doç. Dr. Muammer TÜRKOĞLU (Komisyon Başkanı)</span></li>
-<li><span>Dr. Öğr. Üyesi Özgür TONKAL</span></li>
-<li><span>Dr. Öğr. Üyesi Emel SOYLU</span></li>
-<li><span>Arş. Gör. Ferhat ARAT</span></li>
-<li><span>Arş. Gör. Furkancan DEMİRCAN</span></li>
-<li><span>Arş. Gör. İlker GÜR</span></li>
-<li><span>Arş. Gör. Ömer DURMUŞ</span></li>
-<li><span>Arş. Gör. Sarp ÇOBAN</span></li>
-<li><span>Arş. Gör. Deniz Bora KÜÇÜK</span></li>
-</ul>
-<p>&nbsp;</p>
-<p><strong>İşletmede Mesleki Eğitim Programı Bölüm Koordinatörlüğü</strong></p>
-<ul>
-<li><span>Doç. Dr. Muammer TÜRKOĞLU (Koordinatör)</span></li>
-<li><span>Dr. Öğr. Üyesi Nurettin ŞENYER</span></li>
-<li><span>Arş. Gör. Ömer DURMUŞ</span></li>
-</ul>
-<p><strong> </strong></p>
-<p><strong>Erasmus Değişim Programı Bölüm Koordinatörlüğü</strong></p>
-<ul>
-<li><span>Dr. Öğr. Üyesi Özgür TONKAL (Koordinatör)</span></li>
-<li><span>Arş. Gör. Ferhat ARAT</span></li>
-</ul>
-<p>&nbsp;</p>
-<p><strong>Muafiyet ve İntibak Komisyonu</strong></p>
-<ul>
-<li><span>Doç. Dr. Abdulkadir KARACI (Komisyon Başkanı)</span></li>
-<li><span>Doç. Dr. Selçuk ÇAKMAK</span></li>
-<li><span>Dr. Öğr. Üyesi Alper Talha KARADENİZ</span></li>
-<li><span>Arş. Gör. İlker GÜR</span></li>
-<li><span>Arş. Gör. Furkancan DEMİRCAN</span></li>
-</ul>
-<p>&nbsp;</p>
-<p><strong>MÜDEK Danışma Kurulu</strong></p>
-<ul>
-<li><span>Dr. Öğr. Üyesi Emel SOYLU (Koordinatör)</span></li>
-<li><span>Prof. Dr. Hüseyin DEMİR</span></li>
-<li><span>Doç. Dr. Muammer TÜRKOĞLU</span></li>
-<li><span>Doç. Dr. Abdulkadir KARACI</span></li>
-<li><span>Doç. Dr. Selçuk ÇAKMAK</span></li>
-<li><span>Doç. Dr. Zafer CÖMERT</span></li>
-<li><span>Dr. Öğr. Üyesi Nurettin ŞENYER</span></li>
-<li><span>Dr. Öğr. Üyesi Alper Talha KARADENİZ</span></li>
-<li><span>Dr. Öğr. Üyesi Özgür TONKAL</span></li>
-<li><span>Arş. Gör. Ferhat ARAT</span></li>
-<li><span>Arş. Gör. Furkancan DEMİRCAN</span></li>
-<li><span>Arş. Gör. İlker GÜR</span></li>
-<li><span>Arş. Gör. Ömer DURMUŞ</span></li>
-<li><span>Arş. Gör. Sarp ÇOBAN</span></li>
-<li><span>Arş. Gör. Deniz Bora KÜÇÜK</span></li>
-</ul>
-<p>&nbsp;</p>
-<p><strong>Ders ve Sınav Programı Koordinatörlüğü</strong></p>
-<ul>
-<li><span>Doç. Dr. Muammer TÜRKOĞLU (Koordinatör)</span></li>
-<li><span>Dr. Öğr. Üyesi Emel SOYLU</span></li>
-<li><span>Dr. Öğr. Üyesi Özgür TONKAL</span></li>
-<li><span>Arş. Gör. Ferhat ARAT</span></li>
-<li><span>Arş. Gör. Furkancan DEMİRCAN</span></li>
-<li><span>Arş. Gör. İlker GÜR</span></li>
-<li><span>Arş. Gör. Ömer DURMUŞ</span></li>
-<li><span>Arş. Gör. Sarp ÇOBAN</span></li>
-<li><span>Arş. Gör. Deniz Bora KÜÇÜK</span></li>
-</ul>
-<p>&nbsp;</p>
-<p><strong>Bölüm Kalite Komisyonu</strong></p>
-<ul>
-<li><span>Doç. Dr. Zafer CÖMERT (Komisyon Başkanı)</span></li>
-<li><span>Arş. Gör. Furkancan DEMİRCAN</span></li>
-<li><span>Arş. Gör. Deniz Bora KÜÇÜK</span></li>
-</ul>
-<p>&nbsp;</p>
-<p><strong>Bölüm Tanıtım Komisyonu </strong></p>
-<ul>
-<li><span>Dr. Öğr. Üyesi Alper Talha KARADENİZ (Komisyon Başkanı)</span></li>
-<li><span>Arş. Gör. İlker GÜR</span></li>
-<li><span>Arş. Gör. Deniz Bora KÜÇÜK</span></li>
-</ul>
-<p>&nbsp;</p>
-<p><strong>Danışmanlıklar</strong></p>
-<ul>
-<li><span>1. Sınıf: Dr. Öğr. Üyesi Alper Talha KARADENİZ</span></li>
-<li><span>2. Sınıf: Doç. Dr. Zafer CÖMERT</span></li>
-<li><span>3. Sınıf: Dr. Öğr. Üyesi Özgür TONKAL</span></li>
-<li><span>4. Sınıf: Doç. Dr. Selçuk ÇAKMAK</span></li>
-</ul>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-				</section>
-
-				
-				<div class="next-prev-post">
-					<div class="box left"><a href="#"><small>&laquo;</small><span> Arş. Gör. Ömer DURMUŞ</span></a></div><div class="box right"><a href="#"><span>Doç. Dr. Zafer CÖMERT</span><small>&raquo;</small></a></div>				</div>
-			</div>
-
-			<aside aria-label="Yan Panel" class="sidebar">
-				    <sections aria-label="Duyurular" class="widget tasarim-3 sidebarW">
-    <div class="widget-name">
-        <div class="baslik"><i class="fa-solid fa-bullhorn"></i><span>Duyurular</span></div>
-                    <a href="#">Tümünü Gör</a>
-            </div>
-    <div class="boxs">
-                    <div class="box">
-                <div class="icon"><i></i></div>
-                <div class="content">
-                    <div class="head">
-                        <div class="title">
-                            <a href="#"><span>2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Yüksek Lisans Ara Sınav Takvimi</span></a>
-                        </div>
-                        <div class="time">
-                            04 Nisan 2026 Cts                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="box">
-                <div class="icon"><i></i></div>
-                <div class="content">
-                    <div class="head">
-                        <div class="title">
-                            <a href="#"><span>[GÜNCELLENDİ]2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Ara Sınav Takvimi</span></a>
-                        </div>
-                        <div class="time">
-                            15 Mart 2026 Paz                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="box">
-                <div class="icon"><i></i></div>
-                <div class="content">
-                    <div class="head">
-                        <div class="title">
-                            <a href="#"><span>2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Yüksek Lisans Ders Programı</span></a>
-                        </div>
-                        <div class="time">
-                            06 Şubat 2026 Cum                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="box">
-                <div class="icon"><i></i></div>
-                <div class="content">
-                    <div class="head">
-                        <div class="title">
-                            <a href="#"><span>2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Lisans Ders Programı</span></a>
-                        </div>
-                        <div class="time">
-                            06 Şubat 2026 Cum                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="box">
-                <div class="icon"><i></i></div>
-                <div class="content">
-                    <div class="head">
-                        <div class="title">
-                            <a href="#"><span>2025-2026 Güz Dönemi Mezuniyet Sınav Takvimi</span></a>
-                        </div>
-                        <div class="time">
-                            28 Ocak 2026 Çar                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-</sections>
-<sections aria-label="Haberler" class="widget tasarim-2 sidebarW">
-    <div class="widget-name">
-        <div class="baslik"><i class="fa-solid fa-newspaper"></i><span>Haberler</span></div>
-                    <a href="#">Tümünü Gör</a>
-            </div>
-    <div class="boxs">
-                    <div class="box">
-                <div class="figure">
-                    <a href="#">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA0MDAgMjMwJy8+" data-src="https://cdn.samsun.edu.tr/image/120x74/sites/62/2026/03/zafer_optimized.comert.png" alt="Prof. Dr. Zafer CÖMERT Bilgisayar ve Bilişim Bilimleri Fakültesi Dekanlığı Görevine Atandı" width="72" height="48">
-                    </a>
-                </div>
-                <div class="detail">
-                    <div class="title">
-                        <a href="#"><span>Prof. Dr. Zafer CÖMERT Bilgisayar ve Bilişim Bilimleri Fakültesi Dekanlığı Görevine Atandı</span></a>
-                    </div>  
-                    <div class="time">
-                        16 Nisan 2026 Per                    </div>
-                </div>
-            </div>
-                    <div class="box">
-                <div class="figure">
-                    <a href="#">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA0MDAgMjMwJy8+" data-src="https://cdn.samsun.edu.tr/image/120x74/sites/62/2026/03/zafer_optimized.comert.png" alt="Profesörlük Tebriği" width="72" height="48">
-                    </a>
-                </div>
-                <div class="detail">
-                    <div class="title">
-                        <a href="#"><span>Profesörlük Tebriği</span></a>
-                    </div>  
-                    <div class="time">
-                        26 Mart 2026 Per                    </div>
-                </div>
-            </div>
-                    <div class="box">
-                <div class="figure">
-                    <a href="#">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA0MDAgMjMwJy8+" data-src="https://cdn.samsun.edu.tr/image/120x74/sites/62/2026/02/Ferhat-ARAT-2026.jpg" alt="Öğretim Elemanımız Arş. Gör. Ferhat Arat’tan TÜBİTAK Proje Başarısı" width="72" height="48">
-                    </a>
-                </div>
-                <div class="detail">
-                    <div class="title">
-                        <a href="#"><span>Öğretim Elemanımız Arş. Gör. Ferhat Arat’tan TÜBİTAK Proje Başarısı</span></a>
-                    </div>  
-                    <div class="time">
-                        10 Şubat 2026 Sal                    </div>
-                </div>
-            </div>
-                    <div class="box">
-                <div class="figure">
-                    <a href="#">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA0MDAgMjMwJy8+" data-src="https://cdn.samsun.edu.tr/image/120x74/sites/62/2026/02/WhatsApp-Image-2026-01-30-at-19.30.54.jpeg" alt="Doç. Dr. Muammer Türkoğlu’ndan TÜBİTAK Proje Başarısı" width="72" height="48">
-                    </a>
-                </div>
-                <div class="detail">
-                    <div class="title">
-                        <a href="#"><span>Doç. Dr. Muammer Türkoğlu’ndan TÜBİTAK Proje Başarısı</span></a>
-                    </div>  
-                    <div class="time">
-                        03 Şubat 2026 Sal                    </div>
-                </div>
-            </div>
-                    <div class="box">
-                <div class="figure">
-                    <a href="#">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA0MDAgMjMwJy8+" data-src="https://cdn.samsun.edu.tr/image/120x74/sites/62/2026/02/WhatsApp-Image-2026-01-30-at-17.46.53.jpeg" alt="Doç. Dr. Muammer Türkoğlu’ndan TÜBİTAK Proje Başarısı" width="72" height="48">
-                    </a>
-                </div>
-                <div class="detail">
-                    <div class="title">
-                        <a href="#"><span>Doç. Dr. Muammer Türkoğlu’ndan TÜBİTAK Proje Başarısı</span></a>
-                    </div>  
-                    <div class="time">
-                        02 Şubat 2026 Pts                    </div>
-                </div>
-            </div>
-            </div>
-</sections>
-			</aside>
-
-		</div>
-	</article>
-</div>
+    </article>
+  </div>
 </main>
-<footer role="contentinfo" class="footer">
-	<nav aria-label="Alt Menü" class="top">
-		<ul>
-			<li><a href="#"><i class="fa-solid fa-graduation-cap"></i>Öğrenciler</a></li>
-			<li><a href="#"><i class="fa-solid fa-school"></i>Fakülteler</a></li>
-			<li><a href="#"><i class="fa-solid fa-user-tie"></i>İdari Personel</a></li>
-			<li><a href="#"><i class="fa-solid fa-chalkboard-user"></i>Akademik Personel</a></li>
-			<li><a href="#"><i class="fa-solid fa-user-pen"></i>Aday Öğrenci</a></li>
-		</ul>
-	</nav>
-
-	<div class="body">
-		<div class="container">
-			<ul class="social">
-				<li class="facebook">
-					<a rel="nofollow" href="https://www.facebook.com/samsun.univ" target="_blank" title="Facebook">
-						<i class="fa-brands fa-facebook-f"></i>
-					</a>
-				</li>
-				<li class="twitter">
-					<a rel="nofollow" href="https://x.com/samsun_univ" target="_blank" title="Twitter">
-						<i class="fa-brands fa-x-twitter"></i>
-					</a>
-				</li>
-				<li class="linkedin">
-					<a rel="nofollow" href="https://www.linkedin.com/school/samsununiversitesi/" target="_blank" title="LinkedIn">
-						<i class="fa-brands fa-linkedin-in"></i>
-					</a>
-				</li>
-				<li class="instagram">
-					<a rel="nofollow" href="https://www.instagram.com/samsun.univ/" target="_blank" title="Instagram">
-						<i class="fa-brands fa-instagram"></i>
-					</a>
-				</li>
-				<li class="youtube">
-					<a rel="nofollow" href="https://www.youtube.com/c/SamsunÜniversitesii" target="_blank" title="YouTube">
-						<i class="fa-brands fa-youtube"></i>
-					</a>
-				</li>
-			</ul>
-		
-			<div class="logo">
-				<img src="https://yazilimmuhendisligi.samsun.edu.tr/wp-content/themes/idari-v2/assets/img/beyaz-logo.png" alt="Samsun Üniversitesi" width="354" height="103">
-			</div>
-
-			<div class="text">
-				<p>
-					Nitelikli toplum için nitelikli üniversite idealine sahip<br>
-						Türkiye’nin bugünü ve geleceğine katma değer sağlayan bir üniversite				</p>
-			</div>
-
-			<ul class="list">
-				<li>
-					<a href="#">
-						Çerezler Politikası					</a>
-				</li>
-				<li>
-					<a href="#">
-						Kurumsal Kimlik					</a>
-				</li>
-				<li>
-					<a href="#">
-						Tarihçe					</a>
-				</li>
-				<li>
-					<a href="#">
-						İletişim					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="bottom">
-		<div class="container">
-			<div class="copyright">
-				© 2026 
-				Samsun Üniversitesi - Bilgi İşlem Daire Başkanlığı			</div>
-
-			<div class="app">
-				<div class="box">
-					<a href="#" target="_blank">
-						<div class="figure">
-							<img src="https://samsun.edu.tr/wp-content/uploads/2025/04/play-store.png" alt="Google Play">
-						</div>
-						<div class="detail">
-							<span>Google Play'de</span>
-							<span>İndirebilirsiniz</span>
-						</div>
-					</a>
-				</div>
-
-				<div class="box">
-					<a onclick="alert('Yakında')">
-						<div class="figure">
-							<img src="https://samsun.edu.tr/wp-content/uploads/2025/04/app-store.png" alt="App Store">
-						</div>
-						<div class="detail">
-							<span>App Store'dan</span>
-							<span>İndirebilirsiniz</span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+<footer class="site-foot">
+  <div class="wrap">© 2026 Yazılım Mühendisliği Bölümü Bilgi Sayfaları</div>
 </footer>
-
-<!-- Google tag (gtag.js) -->
 </body>
 </html>
-
-
-
